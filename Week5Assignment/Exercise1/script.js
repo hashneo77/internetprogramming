@@ -4,7 +4,7 @@ function myClickFunction() {
 }
 
 function myFunction() {
-    alert("Element Clicked");
+    alert("The button was pressed");
 }
 
 
