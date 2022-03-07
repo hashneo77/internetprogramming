@@ -5,12 +5,12 @@ function myClickFunction() {
 }
 
 function myFunction() {
-    setInterval(opacityReduce, 1000);
+    setInterval(opacityReduce, 10);
 }
 
 function opacityReduce() {
     var ele = document.getElementById('circle');
-    ele.style.opacity = parseFloat(ele.style.opacity) - 0.1;
+    ele.style.opacity = parseFloat(ele.style.opacity) - 0.01;
 }
 
 
