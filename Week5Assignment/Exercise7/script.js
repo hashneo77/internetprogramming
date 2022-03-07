@@ -1,7 +1,7 @@
 function myClickFunction() {
     var ele = document.getElementById("circle");
     ele.style.opacity = 1;
-    ele.addEventListener('click', myFunction);
+    document.addEventListener('keydown', myFunction);
 }
 
 function myFunction() {
