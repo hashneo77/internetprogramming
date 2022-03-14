@@ -1,3 +1,5 @@
+var timer = 0;
+
 function myClickFunction() {
     var ele = document.getElementById("circle");
     ele.style.opacity = 1;
@@ -33,18 +35,18 @@ function moveBottom(){
 
 function myFunction(event) {
     console.log(event.keyCode)
-
+    clearInterval(timer);
     if(event.keyCode==37){
-        setInterval(moveLeft,10);  
+        timer = setInterval(moveLeft,10);  
     }
     if(event.keyCode==39){
-        setInterval(moveRight,10);  
+        timer = setInterval(moveRight,10);  
     }
     if(event.keyCode==38){
-        setInterval(moveBottom,10);  
+        timer = setInterval(moveBottom,10);  
     }
     if(event.keyCode==40){
-        setInterval(moveTop,10);  
+        timer = setInterval(moveTop,10);  
     }
 }
 
